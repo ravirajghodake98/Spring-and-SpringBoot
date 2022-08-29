@@ -1,0 +1,43 @@
+<!-- SDI using LITERALS -->
+<!--
+Spring Dependancy Injection in terms of LITERALS using setter method
+<bean id="s1" class= "com.cg.di.Student" >
+	<property name = "StudentName" value = "Raviraj"/>
+	<property name = "id" value = "101"/>
+</bean>
+-->
+
+<!--
+Spring Dependancy Injection in terms of LITERALS using constructor method
+<bean id="s2" class= "com.cg.di.Student" >
+	<constructor-arg name = "studentName" value = "Black Panther"/>
+	<constructor-arg name = "id" value = "102"/>
+</bean>
+-->
+
+
+
+<!-- SDI using OBJECTS -->
+<!--
+<bean id="s1" class= "com.cg.di1.Student1" >
+	<property name = "c">
+	<bean class = "com.cg.di1.Cheat"/> 
+</property>
+</bean>
+
+<bean id="s2" class= "com.cg.di1.AnotherStudent" >
+	<property name = "c">
+	<bean class = "com.cg.di1.Cheat"/> 
+</property>
+</bean>
+-->
+
+<!--
+Spring Dependancy Injection in terms of OBJECTS using constructor method
+<bean id="objectMathCheat" class= "com.cg.di1.Cheat"/>
+
+<bean id="s1" class= "com.cg.di1.Student1" >
+	<property name = "c"  ref = "objectMathCheat">
+</property>
+</bean>
+-->

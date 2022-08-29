@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<!-- SDI using COLLECTIONS -->
+<bean id="s2" class="com.cg.di2.College">
+	<property name="ClgId" value="201" />
+    <property name="ClgName" value="MIT COE" />
+ 
+    <property name="students">
+        <list>
+            <ref bean="std1" />
+            <ref bean="std2" />
+            
+        </list>
+    </property>
+</bean>
+
+<bean id="std1" class="com.cg.di2.Student2">
+    <property name="StdId" value="301" />
+    <property name="StdName" value="Punisher" />
+</bean>
+
+<bean id="std2" class="com.cg.di2.Student2">
+    <property name="StdId" value="302" />
+    <property name="StdName" value="Daredevil" />
+</bean>
+
+</beans>
