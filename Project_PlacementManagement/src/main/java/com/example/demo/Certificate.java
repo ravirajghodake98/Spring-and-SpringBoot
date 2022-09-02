@@ -13,17 +13,20 @@ public class Certificate
 	private Integer id;
 	private Integer year;
 	
+	//default constructor
 	public Certificate()
 	{
 		
 	}
 
+	//parametrized 
 	public Certificate(Integer id, Integer year) {
 		super();
 		this.id = id;
 		this.year = year;
 	}
 
+	//getters and setters
 	public Integer getId() {
 		return id;
 	}
@@ -40,6 +43,7 @@ public class Certificate
 		this.year = year;
 	}
 
+	//tostring
 	@Override
 	public String toString() {
 		return "Certificate [id=" + id + ", year=" + year + "]";
